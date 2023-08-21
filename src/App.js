@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Header from './components/Header';
 import Concept from './components/Concept';
 
 import keyConceptsImage from './assets/images/key-concepts.png';
@@ -31,11 +32,9 @@ const concepts = [
 function App() {
   return (
     <div>
-      <header>
-        <img src={keyConceptsImage} alt="Medal badge with a star" />
-        <h1>Key React Concepts</h1>
-        <p>Selected key React concepts you should know about</p>
-      </header>
+      <Header
+        image={keyConceptsImage}> 
+      </Header>
       <ul id="concepts">
         <Concept
           title={concepts[0].title}
